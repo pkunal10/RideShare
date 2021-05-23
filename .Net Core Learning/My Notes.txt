@@ -1,0 +1,5 @@
+1. IActionResult return type if returning type (status) is more then one type. eg: ok, notFOund, badrequest
+2. ActionResult return type if returning type (status) is NOT more then one type.
+3. If method getting data from db and it is lil bit big list of data then use async method. async always use return type Task<>. 
+	eg:- Task<IActionResult>, Task<IActionResult<ListORIEnumrable<User>>>. if method is async then make it async in all layers like Controller, Serivces.
+	Dont forget await keyword in return statement if method is async.
